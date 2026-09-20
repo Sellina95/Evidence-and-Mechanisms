@@ -115,4 +115,8 @@ The repository is designed to improve explanatory frameworks through evidence, n
 The case also tests and weakens simpler explanations based on dovish Fed repricing, broad short-covering, and a pure oil-to-inflation-expectations channel.
 
 [Read CASE-001 →](cases/CASE-001-september-2026-fed-hike/README.md)
+[Evidence](cases/CASE-001-september-2026-fed-hike/evidence.md) ·
+[Hypotheses](cases/CASE-001-september-2026-fed-hike/hypotheses.md) ·
+[Timeline](cases/CASE-001-september-2026-fed-hike/intraday_timeline.md) ·
+[Conclusion](cases/CASE-001-september-2026-fed-hike/conclusion.md)
 
