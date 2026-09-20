@@ -102,3 +102,17 @@ Close
 ```
 
 The repository is designed to improve explanatory frameworks through evidence, not to force every observation into an existing model.
+
+
+## Completed Cases
+
+### CASE-001 — September 2026 Fed Hike
+
+**Question:** Why did the 10-year real Treasury yield fall after a hawkish Fed hike?
+
+**Finding:** The strongest evidence points to compression in long-duration risk compensation. On September 17, the 10-year real yield fell about 7 bp while inflation compensation was approximately unchanged and the estimated 10-year term premium fell about 6 bp.
+
+The case also tests and weakens simpler explanations based on dovish Fed repricing, broad short-covering, and a pure oil-to-inflation-expectations channel.
+
+[Read CASE-001 →](cases/CASE-001-september-2026-fed-hike/README.md)
+
