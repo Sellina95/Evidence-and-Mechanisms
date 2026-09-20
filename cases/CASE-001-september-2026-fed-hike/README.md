@@ -20,10 +20,10 @@ The key empirical question became:
 
 Before examining the data, the baseline expectation was frozen as:
 
-Fed tightening  
-→ U.S. rates rise  
-→ USD strengthens  
-→ financial conditions tighten  
+Fed tightening
+→ U.S. rates rise
+→ USD strengthens
+→ financial conditions tighten
 → risk assets weaken.
 
 The case tests where this transmission chain broke.

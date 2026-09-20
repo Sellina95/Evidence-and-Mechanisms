@@ -4,11 +4,11 @@
 
 The initial baseline was:
 
-Fed tightening  
-→ U.S. interest rates rise  
-→ USD strengthens  
-→ financial conditions tighten  
-→ risk assets weaken  
+Fed tightening
+→ U.S. interest rates rise
+→ USD strengthens
+→ financial conditions tighten
+→ risk assets weaken
 → EM currencies face depreciation pressure.
 
 This remains a useful first-order framework, but CASE-001 shows that it is incomplete.
@@ -19,23 +19,23 @@ The September 2026 episode demonstrated that a hawkish policy shock can affect d
 
 A more complete transmission structure is:
 
-Fed tightening  
-→ expected short-rate path rises  
+Fed tightening
+→ expected short-rate path rises
 → front-end tightening pressure
 
 while simultaneously:
 
-credible anti-inflation commitment  
-→ long-horizon policy / inflation uncertainty declines  
-→ term premium may compress  
+credible anti-inflation commitment
+→ long-horizon policy / inflation uncertainty declines
+→ term premium may compress
 → long-end yields may stabilize or decline.
 
 External shocks can reinforce or offset these channels.
 
 In CASE-001:
 
-energy-supply risk eased  
-→ macro and inflation tail risk declined  
+energy-supply risk eased
+→ macro and inflation tail risk declined
 → long-duration risk compensation may have compressed further.
 
 ## Updated Framework
