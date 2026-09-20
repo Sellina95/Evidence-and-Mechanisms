@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="35" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">September 17 Treasury Futures Rally</text>
+<text x="24" y="260.0" text-anchor="middle" transform="rotate(-90 24 260.0)" font-family="Arial" font-size="14">Price change (%)</text>
+<line x1="90" x2="860" y1="440.0" y2="440.0" stroke="#dddddd"/>
+<text x="78" y="445.0" text-anchor="end" font-family="Arial" font-size="13">0.00</text>
+<line x1="90" x2="860" y1="347.5" y2="347.5" stroke="#dddddd"/>
+<text x="78" y="352.5" text-anchor="end" font-family="Arial" font-size="13">0.14</text>
+<line x1="90" x2="860" y1="255.0" y2="255.0" stroke="#dddddd"/>
+<text x="78" y="260.0" text-anchor="end" font-family="Arial" font-size="13">0.28</text>
+<line x1="90" x2="860" y1="162.5" y2="162.5" stroke="#dddddd"/>
+<text x="78" y="167.5" text-anchor="end" font-family="Arial" font-size="13">0.42</text>
+<line x1="90" x2="860" y1="70.0" y2="70.0" stroke="#dddddd"/>
+<text x="78" y="75.0" text-anchor="end" font-family="Arial" font-size="13">0.56</text>
+<rect x="133.3125" y="394.07801418439715" width="105.87500000000001" height="45.921985815602845" fill="#555555"/>
+<text x="186.25" y="386.07801418439715" text-anchor="middle" font-family="Arial" font-size="14">0.07%</text>
+<text x="186.25" y="478" text-anchor="middle" font-family="Arial" font-size="14">2Y</text>
+<rect x="325.8125" y="308.79432624113474" width="105.87500000000001" height="131.20567375886526" fill="#555555"/>
+<text x="378.75" y="300.79432624113474" text-anchor="middle" font-family="Arial" font-size="14">0.20%</text>
+<text x="378.75" y="478" text-anchor="middle" font-family="Arial" font-size="14">5Y</text>
+<rect x="518.3125" y="210.3900709219858" width="105.87500000000001" height="229.6099290780142" fill="#555555"/>
+<text x="571.25" y="202.3900709219858" text-anchor="middle" font-family="Arial" font-size="14">0.35%</text>
+<text x="571.25" y="478" text-anchor="middle" font-family="Arial" font-size="14">10Y</text>
+<rect x="710.8125" y="131.66666666666663" width="105.87500000000001" height="308.33333333333337" fill="#555555"/>
+<text x="763.75" y="123.66666666666663" text-anchor="middle" font-family="Arial" font-size="14">0.47%</text>
+<text x="763.75" y="478" text-anchor="middle" font-family="Arial" font-size="14">Ultra-10Y</text>
+</svg>
