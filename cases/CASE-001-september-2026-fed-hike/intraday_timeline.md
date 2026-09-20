@@ -47,3 +47,25 @@ The next step is to identify which observable variables can discriminate between
 1. position unwinding,
 2. inflation-credibility / term-structure repricing,
 3. and the reversal of the external energy shock.
+---
+
+# Sequence Update — 2026-09-20
+
+Subsequent evidence refines the initial sequence reconstruction.
+
+The September 17 reversal should not be interpreted as a simple immediate sell-the-fact reaction to an expected rate increase.
+
+The evidence instead indicates:
+
+1. The September 16 rate increase itself was heavily anticipated.
+2. Fed communication remained hawkish and continued to support expectations of further tightening.
+3. Long-end Treasury relief began to emerge even as the short-end and USD continued to reflect a restrictive policy path.
+4. Saudi energy-supply concerns began to ease during the same event window, creating a separate macro shock.
+5. By September 17, Treasury yields had declined across maturities and equities had rebounded.
+6. The September 17 decline in the 10-year nominal yield was almost entirely a real-yield move rather than a further decline in inflation compensation.
+7. Treasury futures prices rose while open interest increased across the 2Y, 5Y, 10Y, and Ultra-10Y December 2026 contracts.
+8. The estimated 10-year Treasury term premium declined approximately 6 bp on September 17.
+
+The sequence is therefore most consistent with a post-FOMC compression in long-duration risk compensation occurring alongside, and potentially reinforced by, easing energy-supply tail risk.
+
+The exact causal split remains unidentified.

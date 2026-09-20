@@ -207,3 +207,97 @@ H3: UNTESTED
 No hypothesis is currently preferred.
 
 Additional hypotheses may be added only when motivated by evidence rather than narrative convenience.
+
+---
+
+# Status Update — 2026-09-20
+
+## H1 — Pre-Pricing / Position Unwind
+
+### Updated Evidence
+
+The pre-pricing component remains strongly supported: the September 16 rate increase itself was heavily anticipated before the decision.
+
+However, the simple broad position-unwind mechanism is weakened by Treasury futures evidence.
+
+On September 17, December 2026 Treasury futures rose across the 2Y, 5Y, 10Y, and Ultra-10Y contracts while open interest also increased across all four maturities.
+
+This pattern indicates that the rally was not simply a contraction of outstanding positions. Some short covering may have occurred, but new gross positions were simultaneously being established.
+
+### Updated Status
+
+**H1 status: PARTIALLY SUPPORTED — pre-pricing established; simple broad short-covering / liquidation mechanism weakened.**
+
+---
+
+## H2 — Fed Credibility / Long-Run Risk Repricing
+
+### Updated Evidence
+
+The original H2 mechanism requires refinement.
+
+The September 17 decline in the 10-year nominal yield was approximately 7 bp and was almost entirely accounted for by a decline in the 10-year real yield. Ten-year inflation compensation was approximately unchanged.
+
+Therefore the September 17 rally was not primarily driven by a further decline in inflation expectations.
+
+However, the estimated 10-year Treasury term premium declined from approximately 0.67% on September 16 to 0.61% on September 17, a decline of approximately 6 bp.
+
+This closely matched most of the same-day decline in the nominal 10-year Treasury yield.
+
+The evidence is therefore more consistent with compression in long-duration risk compensation than with a simple inflation-expectation channel.
+
+Possible contributing mechanisms include clearer Fed anti-inflation commitment, lower rate uncertainty, and lower interest-rate volatility.
+
+The precise causal contribution of Fed credibility cannot be separately identified.
+
+### Updated Status
+
+**H2 status: PARTIALLY SUPPORTED — the simple inflation-compensation channel is weakened, while a broader long-duration risk / term-premium compression channel is strongly supported by the observed decomposition. Causal attribution to Fed credibility remains incomplete.**
+
+---
+
+## H3 — Non-Fed Macro Shock / Energy-Supply Reversal
+
+### Updated Evidence
+
+Energy prices reversed sharply during the FOMC event window as Saudi supply concerns partially eased.
+
+This creates a material confounding shock.
+
+The September 16 decline in inflation compensation cannot be cleanly attributed to Fed credibility because the oil reversal occurred during the same window.
+
+On September 17, however, 10-year inflation compensation was approximately unchanged while the 10-year real yield declined approximately 7 bp.
+
+Therefore a simple oil-to-inflation-expectations channel does not explain the September 17 long-end rally.
+
+A broader mechanism remains plausible:
+
+energy-supply tail risk declines
+→ macro / inflation uncertainty declines
+→ long-duration risk compensation declines.
+
+This mechanism is consistent with the observed term-premium compression but cannot be separately identified from Fed-related effects.
+
+### Updated Status
+
+**H3 status: PARTIALLY SUPPORTED — energy-risk relief was contemporaneous and likely contributed to lower uncertainty, but it does not independently explain the September 17 real-yield decline.**
+
+---
+
+## Current Cross-Hypothesis Assessment
+
+The September 16–17 episode is best understood as a multi-stage, multi-mechanism repricing rather than a single reaction to the rate increase.
+
+The strongest evidence is that:
+
+- the hike itself was heavily pre-priced;
+- the Fed communication remained hawkish;
+- the September 17 nominal-yield decline was almost entirely a real-yield move;
+- inflation compensation was approximately unchanged on September 17;
+- Treasury futures rallied while open interest increased across maturities;
+- the estimated 10-year term premium declined approximately 6 bp on September 17;
+- energy-supply risk was simultaneously easing.
+
+The available evidence does not permit a clean decomposition of the term-premium decline into Fed-credibility, energy-risk, positioning, or other technical components.
+
+**Overall identification status: PARTIAL. UNKNOWN remains valid for the exact causal split.**
