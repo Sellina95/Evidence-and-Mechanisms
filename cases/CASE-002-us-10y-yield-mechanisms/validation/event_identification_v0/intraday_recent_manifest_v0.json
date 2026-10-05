@@ -1,0 +1,43 @@
+{
+  "contract": "CASE002_INTRADAY_RECENT_V0",
+  "provider": "Yahoo Finance via yfinance",
+  "interval": "5m",
+  "period_requested": "60d",
+  "prepost": true,
+  "tickers": [
+    "SHY",
+    "IEF",
+    "TLT",
+    "TIP"
+  ],
+  "main_window": {
+    "FOMC_PRESS_CONFERENCE": "T-5m to T+30m",
+    "OTHER_EVENTS": "T-10m to T+30m"
+  },
+  "robustness_window": "same start to T+60m",
+  "interpretation": "ETF price responses are confirmation proxies only; they are not direct Treasury-yield observations.",
+  "coverage": {
+    "SHY": {
+      "first": "2026-07-13T04:00:00-04:00",
+      "last": "2026-10-05T06:00:00-04:00",
+      "rows": 6545
+    },
+    "IEF": {
+      "first": "2026-07-13T04:00:00-04:00",
+      "last": "2026-10-05T06:15:00-04:00",
+      "rows": 7478
+    },
+    "TLT": {
+      "first": "2026-07-13T04:00:00-04:00",
+      "last": "2026-10-05T06:50:00-04:00",
+      "rows": 11187
+    },
+    "TIP": {
+      "first": "2026-07-13T04:00:00-04:00",
+      "last": "2026-10-02T17:05:00-04:00",
+      "rows": 6577
+    }
+  },
+  "events_available": 10,
+  "events_unavailable": 151
+}
