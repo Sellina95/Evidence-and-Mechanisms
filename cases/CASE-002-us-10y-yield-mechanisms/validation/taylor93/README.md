@@ -19,7 +19,25 @@ Taylor is the quarter-end signal; the three observed rates are **same-quarter me
 
 ![Rates and quarterly changes](first_comparison.png)
 
-## Policy comparison first, then 2Y and 10Y
+## Timing-aligned main comparison
+
+The corrected main comparison pairs the quarter-end Taylor prescription with quarter-end rates. DFF uses the exact calendar quarter-end observation. DGS2 and DGS10 use the last available business-day observation on or before quarter-end; the maximum lag is two calendar days. The frozen Taylor values and 23-quarter sample do not change.
+
+This is a descriptive timestamp alignment, not an executable end-of-day trading test. A quarter-end DFF or H.15 observation may be published after its observation date, and the downloaded rate histories are current realized histories rather than archived releases.
+
+| Quarter-end comparison | N | Mean Taylor-minus-rate, pp | Level correlation | Change correlation | Versus quarterly-average result |
+|---|---:|---:|---:|---:|---|
+| EFFR | 23 | +2.544 | 0.823 | 0.144 | Almost unchanged (both correlations −0.03) |
+| 2Y | 23 | +2.249 | 0.796 | 0.160 | Weaker (−0.07 level; −0.13 change) |
+| 10Y | 23 | +1.545 | 0.528 | 0.124 | Weaker (−0.12 level; −0.15 change) |
+
+The timing correction does **not strengthen** the result. The EFFR relationship is essentially unchanged under the pre-recorded ±0.05 classification threshold. The 2Y and 10Y relationships weaken, especially for quarterly changes. The central conclusion is therefore firmer: common movement in levels should not be read as strong evidence that Taylor prescriptions explain quarterly Treasury-yield changes.
+
+![Timing-aligned rates and changes](timing_aligned_comparison.png)
+
+Full aligned rows: `quarter_end_taylor_comparison.csv`. Exact comparison with the preserved averages: `timing_alignment_metrics.csv`. Quarter-end observation dates and lags: `quarter_end_market_diagnostics.csv`.
+
+## Preserved quarterly-average robustness comparison
 
 | Same-quarter descriptive comparison | N | Mean difference, pp | Mean absolute distance, pp | RMSE distance, pp | Level correlation | Change correlation |
 |---|---:|---:|---:|---:|---:|---:|
@@ -76,6 +94,12 @@ Current FRED histories can have corrections; they are realized outcomes rather t
 
 ACM is model-estimated and its historical estimates can depend on later estimation data. It is not admitted to the PIT signal. ACM's fitted zero-coupon yield differs from DGS10 constant-maturity yield, so subtracting ACMTP10 from DGS10 is only an approximation, not ACM's exact expected-path series. Never add nominal ACM premium as a third independent component alongside real yield and breakeven. [NY Fed methodology discussion](https://libertystreeteconomics.newyorkfed.org/2014/05/treasury-term-premia-1961-present/).
 
+## 2021+ coverage decision
+
+The main Fed-staff-PIT series **cannot currently be extended beyond 2020Q4**. The official staff-gap workbook ends with the December 2020 vintage, and the Federal Reserve historical-materials index currently stops at 2020. Credible public real-time CBO gaps exist, but they use a different institution's potential-output estimate, public release clock and construction rules. Splicing them would change the information set and economic concept.
+
+No recent observations are imputed. Detailed source, availability, lag and conceptual-comparability findings are in [the recent-coverage audit](recent_coverage_audit.md), with a machine-readable [source ledger](recent_coverage_sources.json).
+
 ## Original, main and sensitivity are separate
 
 | Exercise | Status |
@@ -97,4 +121,4 @@ Validation includes date ordering, unique period joins, matched economic quarter
 
 ## Interpretation boundary
 
-This closes the requested first data-and-comparison step, not CASE-002. The original primary question concerns daily 10Y changes and competing mechanisms. Quarterly Taylor data cannot identify daily shocks, market policy surprises, causal dominance or a regime onset. H1–H4 remain unresolved. No optimized parameters, chosen-for-fit windows, production rules, allocations, or GCF changes are introduced.
+This closes the first data comparison, its timing correction and the recent-coverage audit, not CASE-002. The original primary question concerns daily 10Y changes and competing mechanisms. Quarterly Taylor data cannot identify daily shocks, market policy surprises, causal dominance or a regime onset. H1–H4 remain unresolved. No optimized parameters, sensitivity, chosen-for-fit windows, production rules, allocations, or GCF changes are introduced.

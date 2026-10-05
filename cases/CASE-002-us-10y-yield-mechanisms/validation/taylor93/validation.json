@@ -10,6 +10,8 @@
   },
   "DFF_calendar_completeness": "passed",
   "market_minimum_observations": "55 per quarter passed",
+  "quarter_end_DFF_exact_signal_date": "passed",
+  "quarter_end_treasury_max_lag_days": 2,
   "matched_daily_breakeven_identity_max_abs_pp": 4.440892098500626e-16,
   "economic_lag_quarters_counts": {
     "1.0": 22,

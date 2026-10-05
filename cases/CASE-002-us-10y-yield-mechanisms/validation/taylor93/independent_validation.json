@@ -1,6 +1,18 @@
 {
   "raw_cell_formula_reconciliation_rows": 23,
   "independent_calendar_DFF_mean_rows": 23,
+  "independent_quarter_end_rows": 23,
+  "independent_quarter_end_series": [
+    "DFF",
+    "DGS2",
+    "DGS10"
+  ],
+  "independent_timing_metrics": [
+    "mean_gap",
+    "level_correlation",
+    "change_correlation"
+  ],
+  "recent_coverage_last_staff_vintage": "GBgap_201204",
   "absolute_tolerance_pp": 1e-09,
   "status": "passed"
 }

@@ -45,7 +45,7 @@ The [Taylor execution addendum](validation/taylor93/design.md) fixes inputs, ali
 
 ## 7. Evidence
 
-[First Taylor-93-style comparison](validation/taylor93/README.md): source downloads, staff/public availability distinction, quarterly series, EFFR then 2Y/10Y comparisons, diagnostic rates and validation. Taylor is usually above actual EFFR; level co-movement is stronger than change co-movement. No causal or mechanism-dominance conclusion is established.
+[First Taylor-93-style comparison](validation/taylor93/README.md): source downloads, staff/public availability distinction, timing-aligned quarter-end comparison, preserved quarterly-average robustness result, recent-coverage audit and independent validation. Taylor is usually above actual EFFR; level co-movement is stronger than change co-movement. Quarter-end alignment leaves EFFR results almost unchanged and weakens the 2Y/10Y relationships. No causal or mechanism-dominance conclusion is established.
 
 ## 8. Historical Analogs — Optional
 

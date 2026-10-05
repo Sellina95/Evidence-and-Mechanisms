@@ -97,6 +97,9 @@ def market_data():
             row[c]=s.mean()
             row[c+'_n']=len(s)
             row[c+'_last_date']=str(s.index.max().date()) if len(s) else None
+            row[c+'_quarter_end']=s.iloc[-1] if len(s) else np.nan
+            row[c+'_quarter_end_date']=str(s.index[-1].date()) if len(s) else None
+            row[c+'_quarter_end_lag_days']=(q.end_time.normalize()-s.index[-1]).days if len(s) else np.nan
         row['DFF_complete_calendar_quarter']=row['DFF_n']==(q.end_time.normalize()-q.start_time).days+1
         rows.append(row)
     return daily,pd.DataFrame(rows).set_index('quarter')
@@ -115,6 +118,30 @@ def metrics(df, label, horizon):
             row['prior_realized_mean_no_change_rmse_pp']=np.sqrt((e**2).mean())
         out.append(row)
     return out
+
+def timing_metrics(end, average):
+    out=[]
+    for c in ['DFF','DGS2','DGS10']:
+        target=c+'_quarter_end'
+        d=end[['taylor_pct',target]].dropna()
+        changes=d.diff().dropna()
+        prior=average.loc[average.target==c].iloc[0]
+        level=d.taylor_pct.corr(d[target])
+        change=changes.taylor_pct.corr(changes[target])
+        def assessment(delta):
+            if delta > .05: return 'stronger'
+            if delta < -.05: return 'weaker'
+            return 'almost_unchanged'
+        out.append(dict(comparison='quarter_end_main',target=c,n=len(d),n_changes=len(changes),
+            mean_taylor_minus_rate_pp=(d.taylor_pct-d[target]).mean(),
+            level_correlation=level,change_correlation=change,
+            robustness_quarterly_average_level_correlation=prior.level_correlation,
+            robustness_quarterly_average_change_correlation=prior.change_correlation,
+            level_correlation_change=level-prior.level_correlation,
+            change_correlation_change=change-prior.change_correlation,
+            level_assessment=assessment(level-prior.level_correlation),
+            change_assessment=assessment(change-prior.change_correlation)))
+    return pd.DataFrame(out)
 
 def main():
     price,gap,dates=inputs()
@@ -139,12 +166,21 @@ def main():
     g3=gap.copy(); g3.at[pd.Period(chosen['economic_quarter'],'Q'),chosen['staff_vintage']]=np.nan
     assert select_signal(qtest,price,g3,dates)['status']=='missing_gap_at_matched_economic_quarter'
     daily,market=market_data()
-    write_csv(market.reset_index(),'quarterly_market_diagnostics.csv')
-    same=signals.merge(market.reset_index(),on='quarter',validate='one_to_one')
+    market_reset=market.reset_index()
+    average_cols=[c for c in market_reset.columns if '_quarter_end' not in c]
+    write_csv(market_reset[average_cols],'quarterly_market_diagnostics.csv')
+    end_diagnostic_cols=['quarter']+[c for c in market_reset.columns if '_quarter_end' in c]
+    write_csv(market_reset[end_diagnostic_cols],'quarter_end_market_diagnostics.csv')
+    same=signals.merge(market_reset[average_cols],on='quarter',validate='one_to_one')
     assert same.DFF_complete_calendar_quarter.all()
     assert same[['DGS2_n','DGS10_n','DGS30_n','DFII10_n','T10YIE_n','ACMTP10_n']].ge(55).all().all()
     same['taylor_minus_effr_pp']=same.taylor_pct-same.DFF
     write_csv(same,'quarterly_taylor_comparison.csv')
+    end_cols=['quarter']+[c+s for c in ['DFF','DGS2','DGS10'] for s in ['_quarter_end','_quarter_end_date','_quarter_end_lag_days']]
+    aligned=signals.merge(market_reset[end_cols],on='quarter',validate='one_to_one')
+    assert aligned.DFF_quarter_end_date.eq(aligned.signal_date).all()
+    assert aligned[['DGS2_quarter_end_lag_days','DGS10_quarter_end_lag_days']].le(3).all().all()
+    write_csv(aligned,'quarter_end_taylor_comparison.csv')
     following=signals.copy()
     following['outcome_quarter']=[str(pd.Period(q,'Q')+1) for q in following.quarter]
     following=following.merge(market[['DFF','DGS2','DGS10']].reset_index(),on='quarter',validate='one_to_one')
@@ -153,6 +189,9 @@ def main():
     write_csv(following,'following_quarter_comparison.csv')
     stats=pd.DataFrame(metrics(same,'same_quarter_descriptive',0)+metrics(following,'following_quarter_realization',1))
     write_csv(stats,'comparison_metrics.csv')
+    average_stats=stats.loc[stats.comparison=='same_quarter_descriptive'].copy()
+    timing=timing_metrics(aligned,average_stats)
+    write_csv(timing,'timing_alignment_metrics.csv')
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -172,6 +211,21 @@ def main():
     fig.supxlabel('2015Q2–2020Q4 | Same-quarter comparison is descriptive, not a forecast.\nLagged economic inputs; staff information was not public then. Sources: Philadelphia Fed and FRED.',fontsize=9)
     fig.savefig(ROOT/'first_comparison.png',dpi=160)
     plt.close(fig)
+    fig,axes=plt.subplots(2,1,figsize=(11,7.5),sharex=True,layout='constrained')
+    colors={'taylor_pct':'#9b3d10','DFF_quarter_end':'#172d48','DGS2_quarter_end':'#007d91','DGS10_quarter_end':'#77549c'}
+    labels={'taylor_pct':'Taylor (quarter-end staff PIT)','DFF_quarter_end':'EFFR quarter-end','DGS2_quarter_end':'2Y last available at quarter-end','DGS10_quarter_end':'10Y last available at quarter-end'}
+    for c in colors:
+        axes[0].plot(x,aligned[c],label=labels[c],color=colors[c],linewidth=2)
+        axes[1].plot(x,100*aligned[c].diff(),color=colors[c],linewidth=1.6)
+    axes[0].set_title('CASE-002 | Timing-aligned quarter-end comparison',loc='left',fontweight='bold',fontsize=15)
+    axes[0].set_ylabel('Rate (%)'); axes[1].set_ylabel('Quarterly change (bp)')
+    axes[0].legend(loc='upper left',fontsize=9,ncol=2)
+    for ax in axes:
+        ax.axhline(0,color='#777777',linewidth=.7); ax.grid(axis='y',alpha=.2)
+        ax.spines[['top','right']].set_visible(False)
+    fig.supxlabel('2015Q2–2020Q4 | Taylor and market rates aligned at quarter-end.\nTreasury yields use the last available business-day observation. Sources: Philadelphia Fed and FRED.',fontsize=9)
+    fig.savefig(ROOT/'timing_aligned_comparison.png',dpi=160)
+    plt.close(fig)
     match=daily.loc['2015-04-01':'2020-12-31',['DGS10','DFII10','T10YIE']].dropna()
     identity=match.DGS10-match.DFII10-match.T10YIE
     # Source vintage coverage and row ranges are different concepts.
@@ -179,6 +233,7 @@ def main():
         no_future_vintage_test='passed',missing_input_no_backfill_test='passed',
         date_crosscheck=signals.staff_date_mapping.value_counts().to_dict(),
         DFF_calendar_completeness='passed',market_minimum_observations='55 per quarter passed',
+        quarter_end_DFF_exact_signal_date='passed',quarter_end_treasury_max_lag_days=int(aligned[['DGS2_quarter_end_lag_days','DGS10_quarter_end_lag_days']].max().max()),
         matched_daily_breakeven_identity_max_abs_pp=float(identity.abs().max()),
         economic_lag_quarters_counts=signals.economic_lag_quarters.value_counts().to_dict(),
         price_first_vintage=price.columns[0],price_last_vintage=price.columns[-1],

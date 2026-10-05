@@ -1,0 +1,4 @@
+comparison,target,n,n_changes,mean_taylor_minus_rate_pp,level_correlation,change_correlation,robustness_quarterly_average_level_correlation,robustness_quarterly_average_change_correlation,level_correlation_change,change_correlation_change,level_assessment,change_assessment
+quarter_end_main,DFF,23,22,2.5441706577,0.8234460854,0.1436003533,0.8496887299,0.1705616001,-0.0262426445,-0.0269612468,almost_unchanged,almost_unchanged
+quarter_end_main,DGS2,23,22,2.2485184838,0.7958240425,0.1596483582,0.8676304014,0.2857139779,-0.0718063590,-0.1260656197,weaker,weaker
+quarter_end_main,DGS10,23,22,1.5454750056,0.5280448086,0.1241273381,0.6496048123,0.2721425043,-0.1215600037,-0.1480151662,weaker,weaker
