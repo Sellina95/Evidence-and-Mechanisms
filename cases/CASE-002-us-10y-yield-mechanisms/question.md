@@ -34,15 +34,15 @@ This case begins with a question about the conditional explanatory power of exis
 ## Planned Comparison — Not Executed
 
 1. Use daily yield changes, rather than yield-level regressions, as the primary outcome. Preserve levels only as context.
-2. Compare H1–H4 over a common sample with **20- and 60-trading-day rolling windows** as complementary short- and medium-window diagnostics. Small windows limit precision; correlated proxies cannot establish causal dominance.
+2. The frozen first pass compares five daily operational mechanisms over one strict common-date sample using full-sample univariate statistics. The previously proposed **20- and 60-trading-day rolling windows** are deferred to the broader onset/break investigation and require a separate pre-results addendum. Small windows limit precision; correlated proxies cannot establish causal dominance.
 3. In the later pre-data protocol, specify independent mechanism proxies, a simple benchmark, parameter limits, out-of-sample or held-out comparisons, fit/error metrics, and uncertainty treatment. Report incremental explanatory value, timing, sign consistency, and contradictory evidence; no single metric establishes causation.
 4. Pre-specify how persistent an improvement must be to count as onset and how deterioration or failed transmission counts as a break. Require robustness across windows and relevant measurement specifications. Do not pick dates or thresholds after seeing a favorable result. Overlapping rolling windows are not independent confirmations.
 5. Establish why a mechanism gained explanatory power using independently timed changes in its enabling conditions, not a post-hoc label for a fitted breakpoint. Distinguish statistical fit changes from causal identification.
 6. Separate mixed mechanisms, offsetting contributions, and unavailable evidence from rejection. Do not force H1–H4 into mutually exclusive buckets. A break in a dominance claim need not invalidate the underlying mechanism everywhere.
 
-## Question-Driven Data Requirements — Deferred
+## Question-Driven Data Requirements — First Pass Frozen, Broader Work Deferred
 
-No datasets have been requested, downloaded, or analyzed for this case. The list below specifies evidence needs only; exact providers, series, timestamps, vintages, and windows remain for the pre-data protocol.
+The Taylor auxiliary baseline has been completed separately. No daily competing-mechanisms regression has been run. Exact first-pass daily providers, series, transformations, dates, missing-data rules, and metrics are frozen in the [Daily Competing-Mechanisms Specification](daily_competing_mechanisms_spec.md). The list below continues to describe evidence needed for the broader causal and onset/break investigation.
 
 | Evidence needed | Hypothesis tested | Why needed | Source / window / frequency |
 |---|---|---|---|

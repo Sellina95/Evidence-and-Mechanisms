@@ -333,4 +333,8 @@ The following remain open until data availability is verified:
 - exact rolling-window length
 - secondary proxy inclusion
 
-Protocol status: DRAFT — PRE-DATA FREEZE
+Protocol status: PARTIALLY FROZEN
+
+The first-pass daily comparison is now fixed in the dated [Daily Competing-Mechanisms Specification](daily_competing_mechanisms_spec.md). That addendum freezes the outcome, five operational proxies, 2006-02-09 through 2026-09-25 calendar boundary, common-date construction, transformations, missing-data rule, and evaluation metrics before any daily results are calculated.
+
+The broader onset/break investigation remains draft. Rolling windows, onset thresholds, causal triggers, secondary proxies, and multivariate designs are outside the first pass and require a new pre-results addendum. They must not be selected after viewing the first-pass results.

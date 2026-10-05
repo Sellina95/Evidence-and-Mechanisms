@@ -1,6 +1,6 @@
 # CASE-002 — U.S. 10Y Yield Mechanisms
 
-**Status: OPEN — first staff-PIT Taylor comparison completed (2026-10-05)**
+**Status: OPEN — daily competing-mechanisms specification frozen (2026-10-05)**
 **Baseline freeze date: 2026-09-25 (Asia/Seoul)**
 
 ## 1. Observation
@@ -33,15 +33,16 @@ The first quarterly Taylor comparison is available. Mechanism dominance and brea
 | Hypothesis | Mechanism | Status |
 |---|---|---|
 | H1 | Policy-expectations | OPEN |
-| H2 | Term-premium / duration-risk | OPEN |
-| H3 | Inflation-compensation | OPEN |
-| H4 | Real-growth / equilibrium-real-rate | OPEN |
+| H2 | Real-yield repricing (daily operational channel) | OPEN |
+| H3 | Inflation-compensation repricing | OPEN |
+| H4 | ACM term-premium repricing (model estimate) | OPEN |
+| H5 | Long-end / curve-specific repricing | OPEN |
 
-Claims, expected evidence, strengthening/break conditions, and falsification criteria are frozen in [Baseline Framework](baseline_framework.md). None is preferred or tested.
+The conceptual H1–H4 claims, expected evidence, strengthening/break conditions, and falsification criteria remain frozen in [Baseline Framework](baseline_framework.md). The [daily specification](daily_competing_mechanisms_spec.md) fixes an operational H1–H5 ordering for the first comparison; it does not rewrite the conceptual baseline. None is preferred or tested.
 
 ## 6. Data Requirements
 
-The [Taylor execution addendum](validation/taylor93/design.md) fixes inputs, alignment and first-comparison metrics. Verified overlap is 2015Q2–2020Q4 (23 signals). The wider daily-mechanism investigation still requires its remaining empirical choices to be fixed before testing.
+The [Taylor execution addendum](validation/taylor93/design.md) fixes inputs, alignment and first-comparison metrics. Verified overlap is 2015Q2–2020Q4 (23 signals). The wider daily-mechanism first pass is now fixed in the [daily competing-mechanisms specification](daily_competing_mechanisms_spec.md): daily bp changes, same-day regressors, a strict common-date sample from 2006-02-09 through 2026-09-25, and univariate comparison only. No daily regression has been run.
 
 ## 7. Evidence
 
@@ -69,8 +70,9 @@ Reusable framework updated: NO
 
 - [Baseline Framework](baseline_framework.md)
 - [Research Question](question.md)
+- [Frozen Daily Competing-Mechanisms Specification](daily_competing_mechanisms_spec.md)
 - [First Taylor comparison and audit](validation/taylor93/README.md)
 - [Frozen Taylor alignment addendum](validation/taylor93/design.md)
 - [Repository Case Template](../../templates/case_template.md)
 
-This README preserves the eleven-stage workflow. The original baseline remains intact; no reusable framework update or GCF production change follows from this first comparison.
+This README preserves the eleven-stage workflow. The original baseline and frozen Taylor result remain intact; no reusable framework update or GCF production change follows from this specification freeze.
