@@ -1,0 +1,39 @@
+{
+  "audit_date": "2026-10-05",
+  "conclusion": "No PIT-safe conceptually continuous Fed-staff output-gap extension is publicly available after 2020Q4.",
+  "official_sources": [
+    {
+      "name": "Philadelphia Fed Output Gap and Financial Assumptions",
+      "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/gap-and-financial-data-set",
+      "role": "Canonical Board-staff gap archive",
+      "observed_download_coverage": "GBgap_960321 through GBgap_201204"
+    },
+    {
+      "name": "Federal Reserve Transcripts and Other Historical Materials",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomc_historical.htm",
+      "role": "Defines Tealbook provenance and approximately five-year public lag"
+    },
+    {
+      "name": "Federal Reserve Historical Materials by Year",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomc_historical_year.htm",
+      "role": "Availability index",
+      "newest_listed_year": 2020
+    },
+    {
+      "name": "Federal Reserve FEDS Note: Real-time Historical Estimates of the Output Gap",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/real-time-historical-estimates-of-the-output-gap-20191015.html",
+      "role": "Staff-gap definition, production frequency and release lag"
+    },
+    {
+      "name": "Atlanta Fed Taylor Rule Utility",
+      "url": "https://www.atlantafed.org/research-and-data/data/taylor-rule",
+      "role": "Official public real-time CBO-gap alternative; rejected as a splice"
+    },
+    {
+      "name": "CBO Budget and Economic Outlook: 2021 to 2031",
+      "url": "https://www.cbo.gov/publication/56991",
+      "role": "Official public 2021 CBO potential-output vintage",
+      "information_cutoff": "2021-01-12"
+    }
+  ]
+}

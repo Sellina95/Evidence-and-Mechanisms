@@ -1,6 +1,6 @@
 # CASE-002 — U.S. 10Y Yield Mechanisms
 
-**Status: OPEN — BASELINE FROZEN; investigation not started**
+**Status: OPEN — daily competing-mechanisms first pass completed (2026-10-05)**
 **Baseline freeze date: 2026-09-25 (Asia/Seoul)**
 
 ## 1. Observation
@@ -20,7 +20,7 @@ Neither decomposition is itself a causal explanation. Taylor Rule reasoning is a
 
 ## 3. Observed Deviation
 
-Not established. No CASE-002 data collected; match, deviation, and breakpoint remain unclear. See [Research Question](question.md).
+The first quarterly Taylor comparison and the frozen daily competing-mechanisms calculation are available. Mechanism dominance and breakpoints remain unresolved. See [Taylor results and audit](validation/taylor93/README.md), [daily first-pass results](validation/daily_first_pass/README.md), and [Research Question](question.md).
 
 ## 4. Research Question
 
@@ -33,19 +33,22 @@ Not established. No CASE-002 data collected; match, deviation, and breakpoint re
 | Hypothesis | Mechanism | Status |
 |---|---|---|
 | H1 | Policy-expectations | OPEN |
-| H2 | Term-premium / duration-risk | OPEN |
-| H3 | Inflation-compensation | OPEN |
-| H4 | Real-growth / equilibrium-real-rate | OPEN |
+| H2 | Real-yield repricing (daily operational channel) | OPEN |
+| H3 | Inflation-compensation repricing | OPEN |
+| H4 | ACM term-premium repricing (model estimate) | OPEN |
+| H5 | Long-end / curve-specific repricing | OPEN |
 
-Claims, expected evidence, strengthening/break conditions, and falsification criteria are frozen in [Baseline Framework](baseline_framework.md). None is preferred or tested.
+The conceptual H1–H4 claims, expected evidence, strengthening/break conditions, and falsification criteria remain frozen in [Baseline Framework](baseline_framework.md). The [daily specification](daily_competing_mechanisms_spec.md) fixes an operational H1–H5 ordering for the first comparison; it does not rewrite the conceptual baseline. None is preferred or tested.
 
 ## 6. Data Requirements
 
-Evidence needs are outlined in [Research Question](question.md). Collection is deferred. Exact sources, sample dates, vintages, evaluation metrics, and onset/break thresholds require a separate pre-data protocol freeze.
+The [Taylor execution addendum](validation/taylor93/design.md) fixes inputs, alignment and first-comparison metrics. Verified overlap is 2015Q2–2020Q4 (23 signals). The daily first pass follows the unchanged [daily competing-mechanisms specification](daily_competing_mechanisms_spec.md): daily bp changes, same-day regressors, a strict common-date sample from 2006-02-09 through 2026-09-25, and univariate comparison only.
 
 ## 7. Evidence
 
-Not started. Later work must separate observed facts, interpretation, evidence for/against each hypothesis, and unresolved uncertainty.
+[First Taylor-93-style comparison](validation/taylor93/README.md): source downloads, staff/public availability distinction, timing-aligned quarter-end comparison, preserved quarterly-average robustness result, recent-coverage audit and independent validation. Taylor is usually above actual EFFR; level co-movement is stronger than change co-movement. Quarter-end alignment leaves EFFR results almost unchanged and weakens the 2Y/10Y relationships. No causal or mechanism-dominance conclusion is established.
+
+[Daily competing-mechanisms first pass](validation/daily_first_pass/README.md): 5,161 identical daily changes from 2006-02-10 through 2026-09-25. All five coefficients have the pre-specified positive sign. H2/H3 are mechanical decomposition channels; H1/H5 are curve proxies; H4 is an ex-post/current-vintage model estimate. The result is descriptive and does not rank causal mechanisms.
 
 ## 8. Historical Analogs — Optional
 
@@ -69,6 +72,10 @@ Reusable framework updated: NO
 
 - [Baseline Framework](baseline_framework.md)
 - [Research Question](question.md)
+- [Frozen Daily Competing-Mechanisms Specification](daily_competing_mechanisms_spec.md)
+- [Daily Competing-Mechanisms First-Pass Results](validation/daily_first_pass/README.md)
+- [First Taylor comparison and audit](validation/taylor93/README.md)
+- [Frozen Taylor alignment addendum](validation/taylor93/design.md)
 - [Repository Case Template](../../templates/case_template.md)
 
-This README preserves the template's eleven-stage workflow; evidence, conclusion, and framework-update files are intentionally deferred until those stages are performed.
+This README preserves the eleven-stage workflow. The original baseline and frozen Taylor result remain intact; no reusable framework update or GCF production change follows from this specification freeze.

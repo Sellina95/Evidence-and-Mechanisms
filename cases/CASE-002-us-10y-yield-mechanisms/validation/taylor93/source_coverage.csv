@@ -1,0 +1,10 @@
+series,first_observation,last_observation,n,vintage_status
+DFF,1954-07-01,2026-10-01,26391,current_download_not_historical_release_archive
+DGS2,1976-06-01,2026-10-01,12581,current_download_not_historical_release_archive
+DGS10,1962-01-02,2026-10-01,16173,current_download_not_historical_release_archive
+DGS30,1977-02-15,2026-10-01,12403,current_download_not_historical_release_archive
+DFII10,2003-01-02,2026-10-01,5942,current_download_not_historical_release_archive
+T10YIE,2003-01-02,2026-10-02,5943,current_download_not_historical_release_archive
+ACMTP10,1961-06-14,2026-10-01,16290,current_download_not_historical_release_archive
+ACMY10,1961-06-14,2026-10-01,16290,current_download_not_historical_release_archive
+ACMRNY10,1961-06-14,2026-10-01,16290,current_download_not_historical_release_archive

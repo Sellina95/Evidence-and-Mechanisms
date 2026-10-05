@@ -1,0 +1,32 @@
+{
+  "signal_count": 23,
+  "signal_start": "2015Q2",
+  "signal_end": "2020Q4",
+  "no_future_vintage_test": "passed",
+  "missing_input_no_backfill_test": "passed",
+  "date_crosscheck": {
+    "exact": 19,
+    "unique_within_7_days_later_bound_not_exact_verification": 4
+  },
+  "DFF_calendar_completeness": "passed",
+  "market_minimum_observations": "55 per quarter passed",
+  "quarter_end_DFF_exact_signal_date": "passed",
+  "quarter_end_treasury_max_lag_days": 2,
+  "matched_daily_breakeven_identity_max_abs_pp": 4.440892098500626e-16,
+  "economic_lag_quarters_counts": {
+    "1.0": 22,
+    "2.0": 1
+  },
+  "price_first_vintage": "YPDGDP15Q2",
+  "price_last_vintage": "YPDGDP26Q3",
+  "staff_first_vintage": "GBgap_960321",
+  "staff_last_vintage": "GBgap_201204",
+  "coverage_status_counts": {
+    "missing_YPDGDP_vintage": 77,
+    "ok": 23,
+    "missing_staff_vintage_in_signal_quarter": 23
+  },
+  "python": "3.12.14",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5"
+}

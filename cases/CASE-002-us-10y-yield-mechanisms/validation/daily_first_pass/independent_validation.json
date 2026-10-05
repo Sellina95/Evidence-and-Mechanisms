@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "method": "stdlib csv/math recomputation; no pandas, numpy, or regression package",
+  "raw_hashes_rechecked": true,
+  "raw_intersection_and_all_transformations_recomputed": true,
+  "independence_limit": "Both readers use LibreOffice to convert XLS; primary uses pandas and numpy, check uses openpyxl and stdlib math.",
+  "row_count": 5161,
+  "first_change_date": "2006-02-10",
+  "last_change_date": "2026-09-25",
+  "hypothesis_checks": [
+    {
+      "hypothesis": "H1",
+      "max_abs_metric_difference": 9.294010006044573e-12
+    },
+    {
+      "hypothesis": "H2",
+      "max_abs_metric_difference": 4.4491188511130986e-11
+    },
+    {
+      "hypothesis": "H3",
+      "max_abs_metric_difference": 2.307559698877526e-11
+    },
+    {
+      "hypothesis": "H4",
+      "max_abs_metric_difference": 4.851408164086024e-11
+    },
+    {
+      "hypothesis": "H5",
+      "max_abs_metric_difference": 4.600846006258541e-11
+    }
+  ],
+  "max_abs_identity_residual_bp": 0.0,
+  "absolute_metric_tolerance": 1e-09,
+  "specification_sha256_after_calculation": "c332089e04af3e30418b72b21242c45e866d857a546a0aed51ba0c9369c8a9de"
+}

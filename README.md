@@ -120,3 +120,18 @@ The case also tests and weakens simpler explanations based on dovish Fed reprici
 [Timeline](cases/CASE-001-september-2026-fed-hike/intraday_timeline.md) ·
 [Conclusion](cases/CASE-001-september-2026-fed-hike/conclusion.md)
 
+
+### CASE-002 — What Drives U.S. 10-Year Treasury Yields?
+
+**Question:** Which mechanisms best explain movements in the U.S. 10-year Treasury yield, when do they appear to work, and where do they break down?
+
+**Finding:** The evidence does not support a single universal mechanism. Across 113 clean macro-event observations, 10-year yield moves were associated with policy-path / real-rate repricing, inflation compensation, long-end / term-premium repricing, and — most commonly — mixed configurations.
+
+The case combines a real-time Taylor-style baseline, a frozen daily competing-mechanism test, event-conditioned classification, and limited recent intraday confirmation. The evidence is most consistent with a state-dependent, multi-mechanism interpretation of long-term Treasury yield movements.
+
+[Read CASE-002 →](cases/CASE-002-us-10y-yield-mechanisms/README.md)  
+[Event Results](cases/CASE-002-us-10y-yield-mechanisms/validation/event_identification_v0/RESULTS_V0.md) ·
+[Intraday Check](cases/CASE-002-us-10y-yield-mechanisms/validation/event_identification_v0/INTRADAY_RESULTS_V0.md) ·
+[V0 Conclusion](cases/CASE-002-us-10y-yield-mechanisms/validation/event_identification_v0/CASE002_V0_CLOSURE.md)
+
+
