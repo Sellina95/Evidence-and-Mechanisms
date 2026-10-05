@@ -161,3 +161,39 @@ The purpose of V0 is to classify the **relative structure of the move**, not its
 
 The classification rules must not be changed after viewing the resulting label distribution without creating a separately versioned specification.
 
+
+## V0 Operational Clarification — Frozen Before First Label Run
+
+This clarification was frozen before viewing any classification results.
+
+For deterministic implementation:
+
+1. If same-day data are unavailable or the event is contaminated:
+   - INCONCLUSIVE
+
+2. If the 10Y daily change is exactly 0 bp:
+   - INCONCLUSIVE
+
+3. Inflation evidence:
+   - 10Y breakeven moves in the same direction as 10Y
+   - |breakeven| > |real yield|
+
+4. Policy-path evidence:
+   - real yield moves in the same direction as 10Y
+   - 2Y moves in the same direction as 10Y
+   - |real yield| > |breakeven|
+
+5. Long-end / term-premium evidence:
+   - 30Y moves in the same direction as 10Y
+   - ACM 10Y term premium moves in the same direction as 10Y
+   - |real yield| >= |breakeven|
+
+Classification order:
+
+- Inflation evidence only -> INFLATION_COMPENSATION
+- Policy evidence only -> POLICY_PATH
+- Long-end evidence only -> TERM_PREMIUM_LONG_END
+- Policy evidence AND long-end evidence -> MIXED
+- Otherwise -> INCONCLUSIVE
+
+No absolute basis-point threshold is introduced in V0.
