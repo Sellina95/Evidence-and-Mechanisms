@@ -1,0 +1,27 @@
+[
+  {
+    "file": "../taylor93/raw/rates.csv",
+    "series": "DGS2,DGS10,DGS30,DFII10,T10YIE",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFF,DGS2,DGS10,DGS30,DFII10,T10YIE",
+    "source": "Federal Reserve Board H.15 via FRED; T10YIE derived by St. Louis Fed",
+    "frequency": "daily",
+    "units": "percent",
+    "bytes": 197152,
+    "sha256": "8695904f2a34795a986e80f9739173ea25d491be6cecd2684cb77f1ae2fb9567",
+    "raw_file_mtime_utc": "2026-10-05T04:47:17.070116+00:00",
+    "timestamp_note": "mtime records the preserved local snapshot time, not an asserted source release time"
+  },
+  {
+    "file": "../taylor93/raw/ACMTermPremium.xls",
+    "series": "ACMTP10",
+    "url": "https://www.newyorkfed.org/medialibrary/media/research/data_indicators/ACMTermPremium.xls",
+    "landing_page": "https://www.newyorkfed.org/research/data_indicators/term-premia-tabs",
+    "source": "Federal Reserve Bank of New York ACM model",
+    "frequency": "daily published model estimates",
+    "units": "percent",
+    "bytes": 10154496,
+    "sha256": "9c328d05615f7e7adcbf847d7eb2d3780de1b50609112b2dcb48588cae839e6e",
+    "raw_file_mtime_utc": "2026-10-05T04:47:19.483004+00:00",
+    "timestamp_note": "mtime records the preserved local snapshot time, not an asserted source release time"
+  }
+]

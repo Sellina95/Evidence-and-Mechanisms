@@ -1,0 +1,31 @@
+{
+  "specification_sha256_before_calculation": "c332089e04af3e30418b72b21242c45e866d857a546a0aed51ba0c9369c8a9de",
+  "status": "passed",
+  "calendar_boundary": {
+    "start": "2006-02-09",
+    "end": "2026-09-25"
+  },
+  "common_level_first_date": "2006-02-09",
+  "common_level_last_date": "2026-09-25",
+  "common_level_count": 5162,
+  "change_first_date": "2006-02-10",
+  "change_last_date": "2026-09-25",
+  "identical_N_all_hypotheses": 5161,
+  "all_metric_N_identical": true,
+  "missing_method": "strict common-date intersection; no interpolation; no forward-fill; no missing=0",
+  "difference_method": "100 * current percent level minus prior common-date percent level",
+  "timing": "same source-labeled date; no lags",
+  "max_abs_nominal_minus_real_minus_breakeven_change_bp": 1.1102230246251565e-13,
+  "identity_tolerance_bp": 1e-09,
+  "identity_check_passed": true,
+  "interval_calendar_days_counts": {
+    "1": 4026,
+    "2": 59,
+    "3": 915,
+    "4": 161
+  },
+  "max_interval_calendar_days": 4,
+  "python": "3.12.14",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5"
+}

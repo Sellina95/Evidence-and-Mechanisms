@@ -1,0 +1,6 @@
+hypothesis,mechanism,regressor,correlation_with_d_DGS10,ols_r_squared,coefficient,coefficient_sign,matches_prespecified_positive_sign,intercept_bp,N
+H1,Policy-path / front-end repricing proxy,d_DGS2_bp,0.7356471784,0.5411767711,0.8086392549,positive,True,0.0098566966,5161
+H2,Real-yield repricing; mechanical component,d_DFII10_bp,0.8076541719,0.6523052613,0.8837304029,positive,True,-0.0011491904,5161
+H3,Inflation compensation; mechanical component,d_T10YIE_bp,0.4370709757,0.1910310378,0.7294796704,positive,True,0.0143271062,5161
+H4,Term-premium repricing; MODEL ESTIMATE,d_ACMTP10_bp,0.7208427250,0.5196142342,0.7336875733,positive,True,0.0039004229,5161
+H5,Long-end / curve-specific repricing proxy,d_DGS30_bp,0.9287662957,0.8626068320,0.9798949390,positive,True,-0.0063998651,5161
