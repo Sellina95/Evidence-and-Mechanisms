@@ -1,6 +1,6 @@
 # CASE-002 — U.S. 10Y Yield Mechanisms
 
-**Status: OPEN — BASELINE FROZEN; investigation not started**
+**Status: OPEN — first staff-PIT Taylor comparison completed (2026-10-05)**
 **Baseline freeze date: 2026-09-25 (Asia/Seoul)**
 
 ## 1. Observation
@@ -20,7 +20,7 @@ Neither decomposition is itself a causal explanation. Taylor Rule reasoning is a
 
 ## 3. Observed Deviation
 
-Not established. No CASE-002 data collected; match, deviation, and breakpoint remain unclear. See [Research Question](question.md).
+The first quarterly Taylor comparison is available. Mechanism dominance and breakpoints remain unresolved. See [first results and audit](validation/taylor93/README.md) and [Research Question](question.md).
 
 ## 4. Research Question
 
@@ -41,11 +41,11 @@ Claims, expected evidence, strengthening/break conditions, and falsification cri
 
 ## 6. Data Requirements
 
-Evidence needs are outlined in [Research Question](question.md). Collection is deferred. Exact sources, sample dates, vintages, evaluation metrics, and onset/break thresholds require a separate pre-data protocol freeze.
+The [Taylor execution addendum](validation/taylor93/design.md) fixes inputs, alignment and first-comparison metrics. Verified overlap is 2015Q2–2020Q4 (23 signals). The wider daily-mechanism investigation still requires its remaining empirical choices to be fixed before testing.
 
 ## 7. Evidence
 
-Not started. Later work must separate observed facts, interpretation, evidence for/against each hypothesis, and unresolved uncertainty.
+[First Taylor-93-style comparison](validation/taylor93/README.md): source downloads, staff/public availability distinction, quarterly series, EFFR then 2Y/10Y comparisons, diagnostic rates and validation. Taylor is usually above actual EFFR; level co-movement is stronger than change co-movement. No causal or mechanism-dominance conclusion is established.
 
 ## 8. Historical Analogs — Optional
 
@@ -69,6 +69,8 @@ Reusable framework updated: NO
 
 - [Baseline Framework](baseline_framework.md)
 - [Research Question](question.md)
+- [First Taylor comparison and audit](validation/taylor93/README.md)
+- [Frozen Taylor alignment addendum](validation/taylor93/design.md)
 - [Repository Case Template](../../templates/case_template.md)
 
-This README preserves the template's eleven-stage workflow; evidence, conclusion, and framework-update files are intentionally deferred until those stages are performed.
+This README preserves the eleven-stage workflow. The original baseline remains intact; no reusable framework update or GCF production change follows from this first comparison.

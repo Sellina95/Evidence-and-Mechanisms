@@ -1,0 +1,8 @@
+{
+  "ypdgdpQvQd.xlsx": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/ypdgdpQvQd.xlsx",
+  "gap.xlsx": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/greenbook-data/Greenbook_Output_Gap_DH_Web.xlsx",
+  "publication_dates.xlsx": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/greenbook-data/GreenBook_Publication_Dates_Web.xlsx",
+  "ACMTermPremium.xls": "https://www.newyorkfed.org/medialibrary/media/research/data_indicators/ACMTermPremium.xls",
+  "rates.csv": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFF,DGS2,DGS10,DGS30,DFII10,T10YIE",
+  "gen_doc_GDI.pdf": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/documentation/gen_doc_GDI.pdf"
+}

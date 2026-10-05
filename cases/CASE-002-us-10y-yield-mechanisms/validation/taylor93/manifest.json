@@ -1,0 +1,50 @@
+[
+  {
+    "file": "raw/ypdgdpQvQd.xlsx",
+    "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/ypdgdpQvQd.xlsx",
+    "bytes": 54830,
+    "sha256": "5b266bf577bd4c796b35026e0feccf15eb5d3564e0763b3c3bb721b2ec830e32",
+    "download_completed_utc": "2026-10-05T04:47:18.895722+00:00",
+    "timestamp_basis": "local file mtime at first manifest creation"
+  },
+  {
+    "file": "raw/gap.xlsx",
+    "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/greenbook-data/Greenbook_Output_Gap_DH_Web.xlsx",
+    "bytes": 316484,
+    "sha256": "da5eb3367b20554307d23604ec0554fd964850ccbe716eac809efda9e5d83534",
+    "download_completed_utc": "2026-10-05T04:47:17.832686+00:00",
+    "timestamp_basis": "local file mtime at first manifest creation"
+  },
+  {
+    "file": "raw/publication_dates.xlsx",
+    "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/greenbook-data/GreenBook_Publication_Dates_Web.xlsx",
+    "bytes": 24900,
+    "sha256": "0d122d504b8a8e1c2d2d5a911adb21f9eaecdbfa6882df6bafea79e32200b170",
+    "download_completed_utc": "2026-10-05T04:47:17.995760+00:00",
+    "timestamp_basis": "local file mtime at first manifest creation"
+  },
+  {
+    "file": "raw/ACMTermPremium.xls",
+    "url": "https://www.newyorkfed.org/medialibrary/media/research/data_indicators/ACMTermPremium.xls",
+    "bytes": 10154496,
+    "sha256": "9c328d05615f7e7adcbf847d7eb2d3780de1b50609112b2dcb48588cae839e6e",
+    "download_completed_utc": "2026-10-05T04:47:19.483004+00:00",
+    "timestamp_basis": "local file mtime at first manifest creation"
+  },
+  {
+    "file": "raw/rates.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFF,DGS2,DGS10,DGS30,DFII10,T10YIE",
+    "bytes": 197152,
+    "sha256": "8695904f2a34795a986e80f9739173ea25d491be6cecd2684cb77f1ae2fb9567",
+    "download_completed_utc": "2026-10-05T04:47:17.070116+00:00",
+    "timestamp_basis": "local file mtime at first manifest creation"
+  },
+  {
+    "file": "raw/gen_doc_GDI.pdf",
+    "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/documentation/gen_doc_GDI.pdf",
+    "bytes": 277926,
+    "sha256": "33cf7185172a9b628c34d3c035de917d022414ef197e64e85ee558a495e7fd93",
+    "download_completed_utc": "2026-10-05T04:47:13.258998+00:00",
+    "timestamp_basis": "local file mtime at first manifest creation"
+  }
+]
