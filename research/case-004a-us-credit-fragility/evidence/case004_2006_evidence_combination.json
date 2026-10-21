@@ -1,0 +1,18 @@
+{
+  "asof": "2006-06-30",
+  "mortgage_archived_date": "2006-06-17",
+  "mortgage_column_supported": true,
+  "mortgage_yoy_pp": 0.17,
+  "mortgage_p90": 0.135,
+  "mortgage_warning": true,
+  "fraser_report_url": "https://fraser.stlouisfed.org/title/us-financial-data-5335/june-30-2006-537278/content/fulltext/frbsl_usfd_20060629",
+  "fraser_chart_found": true,
+  "abcp_old_march_yoy": 27.7824,
+  "abcp_new_march_yoy": 27.8146,
+  "abcp_new_may_yoy": 29.2274,
+  "abcp_current_weekly_yoy": 29.7432,
+  "abcp_original_numeric_vintage": "OPEN",
+  "historical_two_factor_candidate": true,
+  "complete_pit_gate": "OPEN",
+  "verdict": "PARTIAL_CONTEMPORANEOUS_EVIDENCE"
+}

@@ -1,0 +1,11 @@
+{
+  "audit": "CASE-004 ABCP DEFINITION ROBUSTNESS",
+  "old_series": "H0DTBSPCKBANM",
+  "new_series": "DTBSPCKANM",
+  "old_yoy_pct": 27.7824,
+  "new_yoy_pct": 27.8146,
+  "growth_direction_consistent": true,
+  "definition_comparison": "COMPLETED",
+  "original_vintage_gate": "OPEN",
+  "predictive_validation": "OPEN"
+}

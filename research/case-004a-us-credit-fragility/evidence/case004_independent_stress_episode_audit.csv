@@ -1,0 +1,4 @@
+event,event_quarter,prior_quarters,bis_prior_high_quarters,v0_prior_alert_quarters,v1_prior_alert_quarters,v0_event_stage,v1_event_stage
+GFC_FUNDING_ONSET,2007Q3,8,8,5,6,STAGE_3_FUNDING_STRESS_CANDIDATE,STAGE_3_FUNDING_STRESS_CANDIDATE
+COVID_MARKET_SHOCK,2020Q1,8,0,0,0,NO_STAGE_FLAG,NO_STAGE_FLAG
+US_REGIONAL_BANK_STRESS,2023Q1,8,2,0,0,NO_STAGE_FLAG,NO_STAGE_FLAG

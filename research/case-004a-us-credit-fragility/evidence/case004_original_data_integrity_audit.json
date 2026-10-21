@@ -1,0 +1,19 @@
+{
+  "asof": "2006-06-30",
+  "cp_methodology_change": "2006-04-10",
+  "mortgage_vintage_status": "NO_API_KEY",
+  "abcp_vintage_status": "NO_API_KEY",
+  "current_history_proxy": {
+    "source": "CURRENT REVISED HISTORY / NOT PIT",
+    "mortgage_period_end": "2006-03-31",
+    "mortgage_yoy_pp": 0.19,
+    "mortgage_p90": 0.13,
+    "abcp_date": "2006-06-14",
+    "abcp_yoy_pct": 29.7432,
+    "warning": true
+  },
+  "archived_vintage_replay": null,
+  "pit_gate": "OPEN",
+  "structural_break_gate": "OPEN",
+  "predictive_validation": "OPEN"
+}
