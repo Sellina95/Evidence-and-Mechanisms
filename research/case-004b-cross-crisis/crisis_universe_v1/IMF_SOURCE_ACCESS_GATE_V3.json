@@ -1,0 +1,11 @@
+{
+  "source": "Laeven and Valencia, IMF WP 2026/094",
+  "url": "https://www.elibrary.imf.org/view/journals/001/2026/094/article-A001-en.xml",
+  "tested_utc": "2026-10-25T13:08:56.921952+00:00",
+  "status": "UNEXPECTED_CONTENT",
+  "http_status": 202,
+  "bytes_received": 2224,
+  "sha256": "0e088c110977f727e2c3feba509d856ed357da8a0ce51dfd96eb01aa5b0f2ae1",
+  "appendix_table_verified": false,
+  "crisis_rows_imported": 0
+}

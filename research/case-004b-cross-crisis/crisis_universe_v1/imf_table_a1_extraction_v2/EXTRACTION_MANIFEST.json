@@ -1,0 +1,26 @@
+{
+  "source_pdf": "research/case-004b-cross-crisis/crisis_universe_v1/source/001-article-A001-en.pdf",
+  "source_sha256": "89939196f0f0ccf19e76777396ec0728ed7c75dc13e405aa142bc4c69035a340",
+  "pdf_total_pages": 43,
+  "table_heading_pages": [
+    23
+  ],
+  "candidate_pages": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "candidate_page_count": 12,
+  "event_rows_verified": 0,
+  "imf_jst_reconciliation": "NOT_STARTED",
+  "status": "CANDIDATE_TEXT_EXTRACTED"
+}

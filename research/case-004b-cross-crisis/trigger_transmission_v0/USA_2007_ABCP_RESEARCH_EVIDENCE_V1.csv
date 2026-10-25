@@ -1,0 +1,4 @@
+case_id,observation,period,value,unit,status,source,limitation
+USA_2007,ABCP market contraction,Last five months of 2007,350,USD billions,OBSERVED_IN_PUBLISHED_RESEARCH,https://www.federalreserve.gov/econres/feds/the-evolution-of-a-financial-crisis-panic-in-the-asset-backed-commercial-paper-market.htm,"Published estimate, not independently reproduced"
+USA_2007,ABCP programs experiencing runs,Within weeks of turmoil onset in 2007,approximately one-third,Share of programs,OBSERVED_IN_PUBLISHED_RESEARCH,https://www.federalreserve.gov/econres/feds/the-evolution-of-a-financial-crisis-panic-in-the-asset-backed-commercial-paper-market.htm,Program-level run measure; not direct bank losses
+USA_2007,ABCP stress transmitted to bank balance sheets,2007,,,NOT_YET_VERIFIED,https://www.federalreserve.gov/econres/feds/the-evolution-of-a-financial-crisis-panic-in-the-asset-backed-commercial-paper-market.htm,Requires bank exposure and liquidity-support evidence

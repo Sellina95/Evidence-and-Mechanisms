@@ -1,0 +1,5 @@
+link_id,from_stage,to_stage,hypothesis,evidence_status,causal_status,missing_test
+JPN97_L1,LEGACY_NONPERFORMING_ASSETS,FINANCIAL_INSTITUTION_WEAKNESS,Preexisting nonperforming assets weakened financial institutions before November 1997.,HISTORICAL_ACCOUNT_SUPPORT,NOT_IDENTIFIED,Institution-level bad-loan and capital data before the crisis.
+JPN97_L2,SANYO_CALL_MARKET_DEFAULT,INTERBANK_COUNTERPARTY_CONCERN,Sanyo's call-market default increased concern about counterparty repayment.,HISTORICAL_ACCOUNT_SUPPORT,NOT_IDENTIFIED,"Dated call-market funding volumes, counterparty exposures and rates."
+JPN97_L3,COUNTERPARTY_CONCERN,BANK_FUNDING_WITHDRAWAL,Counterparty concerns contributed to funding withdrawal at exposed banks.,BANK_FUNDING_STRESS_DOCUMENTED,NOT_IDENTIFIED,Cross-institution funding flows and evidence linking lenders to specific default or exposure concerns.
+JPN97_L4,FUNDING_STRESS_AND_FAILURES,SYSTEMIC_POLICY_INTERVENTION,Multiple institution failures and funding pressures contributed to authorities' system-wide liquidity commitment.,OFFICIAL_RESPONSE_DOCUMENTED,NOT_IDENTIFIED,Policy deliberations and alternative drivers of the November 26 response.
